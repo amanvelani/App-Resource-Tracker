@@ -1,0 +1,47 @@
+
+
+[2023-04-10T06:52:10.589Z]
+Processes: 408 total, 3 running, 405 sleeping, 2432 threads 
+2023/04/10 02:52:09
+Load Avg: 2.37, 2.14, 2.17 
+CPU usage: 8.65% user, 11.53% sys, 79.80% idle 
+SharedLibs: 1465M resident, 114M data, 216M linkedit.
+MemRegions: 100493 total, 1516M resident, 140M private, 938M shared.
+PhysMem: 7525M used (1422M wired, 2210M compressor), 106M unused.
+VM: 148T vsize, 6955M framework vsize, 4438583(0) swapins, 5075829(0) swapouts.
+Networks: packets: 23744194/21G in, 14310206/11G out.
+Disks: 32067887/706G read, 5537148/154G written.
+
+PID    COMMAND          %CPU TIME     #TH #WQ #PORTS MEM   PURG CMPRS PGRP  PPID STATE    BOOSTS    %CPU_ME %CPU_OTHRS UID FAULTS COW MSGSENT MSGRECV SYSBSD  SYSMACH CSW    PAGEINS IDLEW POWER INSTRS CYCLES USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+99115* PowerChime       0.0  00:00.45 6   1   314    9377K 0B   6288K 99115 1    sleeping *0[1]     0.00000 0.00000    501 10581  188 3366    747     5843    6777    6810   1053    2     0.0   0      0      aman N/A    N/A   N/A   N/A   N/A   N/A  
+97373* LocationMenu     0.0  00:01.52 3   1   149    8866K 0B   4784K 97373 1    sleeping *0[87]    0.00000 0.00000    501 14841  129 4188    1383    6911    9034    4821   775     8     0.0   0      0      aman N/A    N/A   N/A   N/A   N/A   N/A  
+93150* ScopedBookmarkAg 0.0  00:00.16 2   1   43     4273K 0B   3856K 93150 1    sleeping *0[6]     0.00000 0.00000    501 2359   77  290     218     2918    735     666    35      1     0.0   0      0      aman N/A    N/A   N/A   N/A   N/A   N/A  
+92484* ThumbnailExtensi 0.0  00:02.80 3   2   104    7361K 0B   2432K 92484 1    sleeping *0[1]     0.00000 0.00000    501 16720  145 6468    4423    29643   23116   11163  1109    33    0.0   0      0      aman N/A    N/A   N/A   N/A   N/A   N/A  
+92050* QuickLookSatelli 0.0  00:05.24 11  7   116    20M   0B   6016K 92050 1    sleeping *0[114]   0.00000 0.00000    501 48134  714 7263    4192    364059  18757   20627  5288    247   0.0   0      0      aman N/A    N/A   N/A   N/A   N/A   N/A  
+90967* com.apple.WebKit 0.0  00:01.51 4   1   201    11M   64K  9520K 90967 1    sleeping *21[3]    0.00000 0.00000    501 6610   134 40407   9467    70270   54841   57893  195     391   0.0   0      0      aman N/A    N/A   N/A   N/A   N/A   N/A  
+90959* com.apple.WebKit 0.0  03:51.20 6   3   103    391M  0B   205M  90959 1    sleeping  0[95678] 0.00000 0.00000    501 933145 211 837119  539628  1582755 3270574 962388 31374   3751  0.0   0      0      aman N/A    N/A   N/A   N/A   N/A   N/A  
+90941* com.apple.WebKit 0.0  00:02.62 5   1   89     18M   128K 15M   90941 1    sleeping *73[41]   0.00000 0.00000    501 33738  127 20730   9249    66106   36549   30460  1701    262   0.0   0      0      aman N/A    N/A   N/A   N/A   N/A   N/A  
+90939* com.apple.WebKit 0.0  00:01.41 3   1   77     59M   0B   57M   90939 1    sleeping  0[352]   0.00000 0.00000    501 65816  158 9435    4854    11138   17533   8547   840     42    0.0   0      0      aman N/A    N/A   N/A   N/A   N/A   N/A  
+90937* com.apple.WebKit 0.0  00:06.12 4   1   77     210M  0B   195M  90937 1    sleeping  0[3808]  0.00000 0.00000    501 198265 154 24875   18866   69240   83672   41545  4637    185   0.0   0      0      aman N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 408 total, 2 running, 406 sleeping, 2423 threads 
+2023/04/10 02:52:10
+Load Avg: 2.37, 2.14, 2.17 
+CPU usage: 13.17% user, 7.31% sys, 79.50% idle 
+SharedLibs: 1465M resident, 114M data, 216M linkedit.
+MemRegions: 100493 total, 1516M resident, 140M private, 938M shared.
+PhysMem: 7524M used (1472M wired, 2206M compressor), 107M unused.
+VM: 148T vsize, 6955M framework vsize, 4438583(0) swapins, 5075829(0) swapouts.
+Networks: packets: 23744559/21G in, 14310554/11G out.
+Disks: 32067910/706G read, 5537171/154G written.
+
+PID    COMMAND          %CPU TIME     #TH   #WQ #PORTS MEM    PURG   CMPRS PGRP  PPID  STATE    BOOSTS    %CPU_ME %CPU_OTHRS UID FAULTS    COW   MSGSENT    MSGRECV     SYSBSD     SYSMACH    CSW        PAGEINS IDLEW     POWER INSTRS     CYCLES    USER          #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+28110* Code Helper (Ren 35.4 13:48.64 23    1   236    346M+  0B     144M- 28105 28105 sleeping *0[5]     0.00000 0.00000    501 2728329+  1739  3311678+   1466245+    5601292+   12339242+  5964027+   27712   6850+     35.5  1553551926 929243638 aman          N/A    N/A   N/A   N/A   N/A   N/A  
+175*   WindowServer     31.4 03:17:27 20    5   3783-  714M-  6912K+ 209M- 175   1     sleeping *0[1]     0.07297 0.01299    88  15932221+ 32602 100141967+ 70008566+   108274509+ 255665789+ 71165895+  20860   430236+   31.5  507215645  663328977 _windowserver N/A    N/A   N/A   N/A   N/A   N/A  
+0*     kernel_task      15.0 04:34:14 468/8 0   0      2480K  0B     0B    0     0     running   0[0]     0.00000 0.00000    0   26063     0     2147483647 1656432662+ 0          0          2147483647 0       19317293+ 0.0   129368905  301896128 root          N/A    N/A   N/A   N/A   N/A   N/A  
+46794* top              9.0  00:00.26 2/1   0   32+    4169K+ 0B     0B    46609 46629 running  *0[1]     0.00091 0.00000    0   4399+     317+  238995+    119487+     5157+      127035+    58+        20      0         9.0   758143838  261507462 root          N/A    N/A   N/A   N/A   N/A   N/A  
+28108* Code Helper (GPU 8.7  04:56.79 14    5   175    384M-  192K-  46M-  28105 28105 sleeping *1[5]     0.00190 0.00000    501 490401+   529   3994977+   6080828+    6019026+   13767865+  5951719+   8180    4776      8.7   201989843  189800623 aman          N/A    N/A   N/A   N/A   N/A   N/A  
+28105* Electron         8.5  04:19.84 33    3   469    103M-  80K    34M-  28105 1     sleeping *0[1136]  0.00583 0.01408    501 1039993+  680   4367525+   1225306+    3188335+   12613490+  2905096+   18255   656       8.5   400258706  175105887 aman          N/A    N/A   N/A   N/A   N/A   N/A  
+26178* CleanMyMac X Hea 5.4  01:08.04 13    5   224+   187M+  0B     177M- 26178 1     sleeping *0[1]     0.06901 0.00000    501 612451+   502   397819+    169940+     1375244+   594751+    313829+    26763   1109      5.4   138179029  87379800  aman          N/A    N/A   N/A   N/A   N/A   N/A  
+26698* iTerm2           3.4  03:40.90 6     3   270    153M   768K   53M-  26698 1     sleeping *0[3467+] 0.00068 0.00565    501 1542934+  860   1588273+   371572+     1930285+   3974107+   1390165+   14956   2980      3.4   36697318   65102692  aman          N/A    N/A   N/A   N/A   N/A   N/A  
+26117* CleanMyMac X Men 3.1  00:44.61 6     2   280    175M-  0B     156M- 26117 1     sleeping *0[1]     0.00023 0.05034    501 779800+   2170  120116+    64482+      753558+    554288+    312474+    41887   143       3.1   69332638   58447201  aman          N/A    N/A   N/A   N/A   N/A   N/A  
+174*   syspolicyd       2.7  30:31.46 5     3   163    26M    48K    16M   174   1     sleeping *0[1]     0.00000 0.06612    0   1133034   118   273861+    144521+     2750040+   1076637+   10536241+  213216  923       2.7   286264571  78322867  root          N/A    N/A   N/A   N/A   N/A   N/A  
