@@ -30,7 +30,7 @@ function saveTopOutputToFile() {
     let csv_text  = convertFile.convertFile();
     // let csv_output = convertFile.xyz();
     // console.log(csv_text);
-    // renderFile.renderFile();
+    renderFile.renderFile();
   }); 
 }
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
@@ -54,7 +54,7 @@ const createWindow = () => {
   });
   
   // and load the index.html of the app.
-  mainWindow.loadFile(path.join(__dirname, "index.html"));
+  mainWindow.loadFile(path.join(__dirname, "/Users/aman/Documents/ISSQUARED/CPU-Tracker/src/index.html"));
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools();

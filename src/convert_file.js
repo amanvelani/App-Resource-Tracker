@@ -1,10 +1,10 @@
 // const { renderFile } = require('ejs');
 const fs = require('fs');
-const renderFile = require('./render.js');
+// const renderFile = require('./render.js');
 
 
 function convertFile(){
-    fs.readFile('/Users/aman/Documents/ISSQUARED/Github/CPU-Usage-Monitor-App/top-output.txt', 'utf8', function(err, data) {
+    fs.readFile('/Users/aman/Documents/ISSQUARED/CPU-Tracker/top-output.txt', 'utf8', function(err, data) {
         if (err) {
             console.log(err);
         } else {
