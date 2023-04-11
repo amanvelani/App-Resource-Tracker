@@ -1,6 +1,6 @@
 // const { renderFile } = require('ejs');
 const fs = require('fs');
-// const renderFile = require('./render.js');
+const renderFile = require('./render.js');
 
 
 function convertFile(){
@@ -37,6 +37,7 @@ function convertFile(){
                     console.log(err);
                 } else {
                     console.log('Successfully converted text file to CSV!');
+                    renderFile.renderFile();
                     // renderFile.renderFile();
                     // return true;
                     // console.log(document.getElementById('abds').innerHTML);

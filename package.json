@@ -1,8 +1,8 @@
 {
-  "name": "cpu-monitor",
-  "productName": "cpu-monitor",
+  "name": "cpu-tracker",
+  "productName": "cpu-tracker",
   "version": "1.0.0",
-  "description": "CPU Usage Monitor App on electron",
+  "description": "A cross-platform application to monitor and terminate unnecessary background processes and a user-friendly interface that will allow users to manage and stop background processes.",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
@@ -31,7 +31,7 @@
     }
   },
   "keywords": [],
-  "author": "K.M.H.Mubin <52270073+kmhmubin@users.noreply.github.com>",
+  "author": "Aman Velani",
   "license": "MIT",
   "config": {
     "forge": {
@@ -40,7 +40,7 @@
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "cpu_monitor"
+            "name": "cpu-tracker"
           }
         },
         {

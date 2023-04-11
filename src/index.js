@@ -30,7 +30,6 @@ function saveTopOutputToFile() {
     let csv_text  = convertFile.convertFile();
     // let csv_output = convertFile.xyz();
     // console.log(csv_text);
-    renderFile.renderFile();
   }); 
 }
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
@@ -46,7 +45,7 @@ const createWindow = () => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
     width: 1000,
-    height: 600,
+    height: 450,
     icon: image,
     webPreferences: {
       nodeIntegration: true,
@@ -54,8 +53,10 @@ const createWindow = () => {
   });
   
   // and load the index.html of the app.
-  mainWindow.loadFile(path.join(__dirname, "/Users/aman/Documents/ISSQUARED/CPU-Tracker/src/index.html"));
-
+  setInterval(() => {
+    mainWindow.loadFile(path.join(__dirname, "index.html"));
+  }, 1000);
+  
   // Open the DevTools.
   // mainWindow.webContents.openDevTools();
     // Retrieve the CSV file using the fetch() API
@@ -70,7 +71,7 @@ const createWindow = () => {
 };
 
 // setInterval(() => saveTopOutputToFile(), 5000); // run the command every 5 seconds
-setInterval(saveTopOutputToFile, 6000);
+setInterval(saveTopOutputToFile, 3000);
 // setTimeout(saveTopOutputToFile, 1000);
 
 // This method will be called when Electron has finished
