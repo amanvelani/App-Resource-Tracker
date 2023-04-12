@@ -38,10 +38,10 @@ function generateHTMLOutput(){
   return new Promise((resolve, reject) => {
     let htmlContent = '';
     let isFirstRow = true;
-    let th = '';
-    let tr = '';
 
     let pid_val = null;
+    let cpu_val = null;
+    let process_name = null;
     fs.createReadStream(inputFile)
       .pipe(csv())
       .on('data', (data) => {
@@ -57,8 +57,16 @@ function generateHTMLOutput(){
               if(key == 'PID'){
                 pid_val = value;
                 pid_val = pid_val.replace("*","");
-                htmlContent += `<td class="table-secondary">${pid_val}</td>\n`;
-              } else {
+                htmlContent += `<td class="table-secondary" id = "pid">${pid_val}</td>\n`;
+              }else if(key == '%CPU'){
+                cpu_val = value;
+                htmlContent += `<td class="table-secondary" id = "cpu_val">${cpu_val}</td>\n`;
+              }
+              else if(key == 'COMMAND'){
+                process_name = value;
+                htmlContent += `<td class="table-secondary" id = "process_name">${process_name}</td>\n`;
+              }
+              else {
                 // tr += value + ',';
                 // console.log("Inside TR: "+tr);
                 htmlContent += `<td class="table-secondary">${value}</td>\n`;
@@ -90,7 +98,7 @@ if (require("electron-squirrel-startup")) {
   // eslint-disable-line global-require
   app.quit();
 }
-var image = nativeImage.createFromPath(__dirname + '/icon.ico'); 
+var image = nativeImage.createFromPath(__dirname + '/app_icon.jpeg'); 
 image.setTemplateImage(true);
 
 const createWindow = () => {

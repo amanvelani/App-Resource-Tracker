@@ -18,12 +18,12 @@
       "target": [
         "nsis"
       ],
-      "icon": "src/icon.ico",
+      "icon": "src/app_icon.jpeg",
       "requestedExecutionLevel": "requireAdministrator"
     },
     "nsis": {
-      "installerIcon": "src/icon.ico",
-      "uninstallerIcon": "src/icon.ico",
+      "installerIcon": "src/app_icon.jpeg",
+      "uninstallerIcon": "src/app_icon.jpeg",
       "uninstallDisplayName": "CPU Monitor",
       "license": "LICENSE",
       "oneClick": false,
@@ -65,9 +65,11 @@
     "csv-stringify": "^6.3.0",
     "ejs": "^3.1.9",
     "electron-builder": "^22.7.0",
+    "electron-notifier": "^0.0.0",
     "electron-squirrel-startup": "^1.0.0",
     "node-abort-controller": "^3.1.1",
     "node-fetch": "^3.3.1",
+    "node-notifier": "^10.0.1",
     "os-utils": "0.0.14",
     "ps-list": "^8.1.1",
     "whatwg-fetch": "^3.6.2"

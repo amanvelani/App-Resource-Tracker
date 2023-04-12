@@ -24,15 +24,70 @@
 
   </tbody>
 </table>
+<!-- <button type = "button" id = "notify" name = "button">
+  Click here to trigger a notification!</button> -->
 <script>
     const electron = require('electron');
     const ipcRenderer = electron.ipcRenderer;
+    // const notifier = require('electron-notifier')
+    // const Notification  = require("electron");
+
 
     ipcRenderer.on('cpu', (event, data) => {
-      // console.log(data);
       document.getElementById('table-body').innerHTML = data;
-    });
+      var inputs = document.querySelectorAll("#cpu_val");
+      var processes = document.querySelectorAll("#process_name");
+      var pid = document.querySelectorAll("#pid");
+      // console.log('__dirname:', __dirname);
+      for (var i = 0; i < inputs.length; i++) {
+        const value = parseInt(inputs[i].innerHTML);
+        // console.log("Process Name: " + processes[i].innerHTML);
+        // console.log("CPU usage: " + inputs[i].innerHTML);
+        // console.log(__dirname + '/app_icon.jpeg');
+        if (value > 20) {
+          // console.log("In the if condition");
+          const process = processes[i].innerHTML;
+          const local_pid = pid[i].innerHTML;
+          // const notifier = require('node-notifier');
+          const path = require('path');
+          const NotificationCenter = require('node-notifier').NotificationCenter;
+ 
+          var notifier = new NotificationCenter({
+            withFallback: false, // Use Growl Fallback if <= 10.8 
+            customPath: void 0 // Relative path if you want to use your fork of terminal-notifier 
+          });
+          
+          notifier.notify({
+            'title': "CPU Tracker",
+            // 'subtitle': void 0,
+            'message': `${process} is using ${value}% CPU`,
+            'sound': false, // Case Sensitive string for location of sound file, or use one of OS X's native sounds (see below) 
+            'icon': '/Users/aman/Documents/ISSQUARED/CPU-Tracker/src/app_icon.jpeg', // Absolute Path to Triggering Icon 
+            'actions': ['Kill'],
+
+            
+            // 'reply': true,
+            // 'actions': [
+            //   { type: 'button', text: 'Action 1'}
+            // ],
+
+            // 'contentImage': void 0, // Absolute Path to Attached Image (Content Image) 
+            // 'open': void 0, // URL to open on Click 
+            'wait': true // Wait for User Action against Notification 
+
+          }, function(error, response) {
+            if(error) console.log(error)
+            console.log(response);
+            if(response == 'activate'){
+              kill(local_pid);
+            }
+          });
+    }
+  }
+});
+
   </script>
 <script src="kill.js"></script>
 </body>
 </html>
+
