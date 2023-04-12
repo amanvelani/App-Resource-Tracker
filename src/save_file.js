@@ -7,17 +7,17 @@ const { exec } = require("child_process");
 const fs = require('fs');
 const filename = 'top-output.txt';
 
-console.log("Hello");
+// console.log("Hello");
 
 function saveTopOutputToFile() {
   const stdout = execSync('top -o cpu -n 10');
-  console.log(stdout);
+  // console.log(stdout);
   const date = new Date();
   const timestamp = date.toISOString();
   const output = `\n\n[${timestamp}]\n${stdout}`;
   fs.writeFile(filename, output, (err) => {
     if (err) throw err;
-    console.log('The file has been saved!');
+    // console.log('The file has been saved!');
   }); 
  
   

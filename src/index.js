@@ -11,11 +11,12 @@ const convertFile = require('./convert_file.js');
 const renderFile = require('./render.js');
 // import convertFile from ('./convert_file')
 const filename = 'top-output.txt';
-
+const inputFile = '/Users/aman/Documents/ISSQUARED/CPU-Tracker/output.csv';
+// const outputFile = '/Users/aman/Documents/ISSQUARED/CPU-Tracker/src/index.html';
 function saveTopOutputToFile() {
   // let abortController = new AbortController();
   const stdout = execSync('top -o cpu -n 10 -l 2');
-  console.log(typeof(stdout));
+  // console.log(typeof(stdout));
   // console.log(Object.values(stdout));
   // setTimeout(() => {
   //   abortController.abort();
@@ -23,15 +24,67 @@ function saveTopOutputToFile() {
   const date = new Date();
   const timestamp = date.toISOString();
   const output = `\n\n[${timestamp}]\n${stdout}`;
-  console.log(typeof(output));
+  // console.log(typeof(output));
   fs.writeFile(filename, output, (err) => {
     if (err) throw err;
-    console.log('The file has been saved!');
+    // console.log('The file has been saved!');
     let csv_text  = convertFile.convertFile();
     // let csv_output = convertFile.xyz();
     // console.log(csv_text);
   }); 
 }
+
+function generateHTMLOutput(){
+  return new Promise((resolve, reject) => {
+    let htmlContent = '';
+    let isFirstRow = true;
+    let th = '';
+    let tr = '';
+
+    let pid_val = null;
+    fs.createReadStream(inputFile)
+      .pipe(csv())
+      .on('data', (data) => {
+        htmlContent += '<tr>\n';
+        for (const [key, value] of Object.entries(data)) {
+          // if (isFirstRow) {
+          //   if(['PID','COMMAND','%CPU','TIME','MEM','STATE','POWER','USER'].includes(key)){
+          //     th += key + ',';
+          //     htmlContent += `<th class="table-primary">${key}</th>\n`;
+          //   }
+          // } else {
+            if(['PID','COMMAND','%CPU','TIME','MEM','STATE','POWER','USER'].includes(key)){
+              if(key == 'PID'){
+                pid_val = value;
+                pid_val = pid_val.replace("*","");
+                htmlContent += `<td class="table-secondary">${pid_val}</td>\n`;
+              } else {
+                // tr += value + ',';
+                // console.log("Inside TR: "+tr);
+                htmlContent += `<td class="table-secondary">${value}</td>\n`;
+              }
+            // } 
+          }
+        }
+        htmlContent += `<td class="table-secondary" onclick="kill('${pid_val}')"> <button type="button" class="btn btn-outline-danger">Close</button>
+        </td>\n`;
+        htmlContent += '</tr>\n';
+        isFirstRow = false;
+      })
+      .on('end', () => {
+        // const value = tr.split(',');
+        // console.log(th);
+        // console.log(tr);
+        resolve(htmlContent);
+      })
+      .on('error', (err) => {
+        reject(err);
+      });
+  });
+}
+
+
+
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require("electron-squirrel-startup")) {
   // eslint-disable-line global-require
@@ -53,10 +106,23 @@ const createWindow = () => {
   });
   
   // and load the index.html of the app.
-  setInterval(() => {
-    mainWindow.loadFile(path.join(__dirname, "index.html"));
-  }, 1000);
+  mainWindow.loadFile(path.join(__dirname, "index.html"));
   
+
+  // const htmlHeader = '<!DOCTYPE html>\n<html>\n<head>\n<meta charset="UTF-8">\n<title>CPU-Tracker</title>\n<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">\n<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>\n</head>\n<body>\n<table class="table table-bordered border-primary">\n';
+  // const htmlFooter = '</table>\n<script src="kill.js"></script>\n</body>\n</html>';
+
+  setInterval(() => {
+    generateHTMLOutput()
+      .then((htmlContent) => {
+        const send = htmlContent;
+        // console.log("Send" + send);
+        mainWindow.webContents.send("cpu", send);
+    })
+  }, 10000); 
+
+
+
   // Open the DevTools.
   // mainWindow.webContents.openDevTools();
     // Retrieve the CSV file using the fetch() API
