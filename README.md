@@ -39,7 +39,7 @@ Start the server
 
 ## Screenshots
 
-![App Screenshot](/Screenshot/Application_UI?raw=true "Optional Title")
+![App Screenshot](https://raw.githubusercontent.com/amanvelani/App-Resource-Tracker/main/Screenshot/Application_UI.png "Optional Title")
 
 
 
