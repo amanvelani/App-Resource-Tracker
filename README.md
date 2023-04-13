@@ -41,7 +41,7 @@ Start the server
 ### Application UI:
 ![App Screenshot](https://raw.githubusercontent.com/amanvelani/App-Resource-Tracker/main/Screenshot/Application_UI.png "Optional Title")
 ### Notification:
-![App Screenshot](https://raw.githubusercontent.com/amanvelani/App-Resource-Tracker/main/Screenshot/Notification.png "Optional Title")
+![App Screenshot](https://raw.githubusercontent.com/amanvelani/App-Resource-Tracker/main/Screenshot/Notification.jpeg "Optional Title")
 
 
 ## Demo
