@@ -1,25 +1,47 @@
 
 
-[2023-04-13T04:31:06.420Z]
-Processes: 463 total, 3 running, 460 sleeping, 3041 threads 
-2023/04/13 00:31:06
-Load Avg: 15.67, 9.19, 6.26 
-CPU usage: 16.43% user, 15.98% sys, 67.57% idle 
-SharedLibs: 347M resident, 53M data, 190M linkedit.
-MemRegions: 256837 total, 1327M resident, 99M private, 1046M shared.
-PhysMem: 6577M used (2169M wired, 1781M compressor), 1054M unused.
-VM: 181T vsize, 6955M framework vsize, 14202980(0) swapins, 16475761(0) swapouts.
-Networks: packets: 51265050/51G in, 31716442/28G out.
-Disks: 141015609/3558G read, 16111141/443G written.
+[2023-04-13T05:18:40.784Z]
+Processes: 471 total, 8 running, 3 stuck, 460 sleeping, 2939 threads 
+2023/04/13 01:18:39
+Load Avg: 32.82, 15.84, 8.63 
+CPU usage: 42.61% user, 32.55% sys, 24.83% idle 
+SharedLibs: 568M resident, 59M data, 200M linkedit.
+MemRegions: 255510 total, 1540M resident, 143M private, 1464M shared.
+PhysMem: 6427M used (2272M wired, 922M compressor), 1201M unused.
+VM: 186T vsize, 6955M framework vsize, 15894945(0) swapins, 18414528(0) swapouts.
+Networks: packets: 51748132/52G in, 32100660/29G out.
+Disks: 143325232/3618G read, 16781022/475G written.
 
-PID    COMMAND          %CPU TIME     #TH #WQ #PORTS MEM   PURG CMPRS PGRP  PPID  STATE    BOOSTS %CPU_ME %CPU_OTHRS UID FAULTS COW MSGSENT MSGRECV SYSBSD SYSMACH CSW    PAGEINS IDLEW POWER INSTRS CYCLES USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
-99615* CAReportingServi 0.0  00:02.92 2   1   40     3521K 0B   3056K 99615 1     sleeping *0[14] 0.00000 0.00000    0   10033  101 438843  219560  7615   222659  6978   412     7     0.0   0      0      root N/A    N/A   N/A   N/A   N/A   N/A  
-99607* systemsoundserve 0.0  00:00.25 5   2   167    4481K 0B   3008K 99607 1     sleeping *0[1]  0.00000 0.00000    0   7005   100 3344    561     3741   5148    5278   779     3     0.0   0      0      root N/A    N/A   N/A   N/A   N/A   N/A  
-99605* ScopedBookmarkAg 0.0  00:00.14 2   1   41     4337K 0B   3984K 99605 1     sleeping *0[46] 0.00000 0.00000    501 3139   77  376     364     3136   1031    941    40      2     0.0   0      0      aman N/A    N/A   N/A   N/A   N/A   N/A  
-99598* photolibraryd    0.0  00:01.01 2   1   116    8961K 0B   8608K 99598 1     sleeping *0[21] 0.00000 0.00000    501 10854  157 1625    568     26027  4460    6959   1349    5     0.0   0      0      aman N/A    N/A   N/A   N/A   N/A   N/A  
-99596* recentsd         0.0  00:00.14 2   1   64     4385K 0B   4032K 99596 1     sleeping *0[19] 0.00000 0.00000    501 4051   107 286     127     3287   941     1051   148     0     0.0   0      0      aman N/A    N/A   N/A   N/A   N/A   N/A  
-99392* AdGuard for Safa 0.0  00:00.22 7   1   78     12M   0B   10M   99383 99383 sleeping *0[1]  0.00000 0.00000    501 7255   467 406     334     1947   1158    1399   415     5     0.0   0      0      aman N/A    N/A   N/A   N/A   N/A   N/A  
-99390* AdGuard for Safa 0.0  00:04.83 10  2   141    56M   0B   28M   99383 99383 sleeping *1[11] 0.00000 0.00000    501 12392  537 2475    251285  188887 426021  211417 1406    9     0.0   0      0      aman N/A    N/A   N/A   N/A   N/A   N/A  
-99383* AdGuard for Safa 0.0  00:03.01 28  6   362    57M   0B   48M   99383 1     sleeping *0[51] 0.00000 0.00000    501 73190  572 12826   4715    51149  87571   29669  4074    23    0.0   0      0      aman N/A    N/A   N/A   N/A   N/A   N/A  
-99316* AMPArtworkAgent  0.0  00:00.11 2   1   39     3153K 0B   2816K 99316 1     sleeping  0[0]  0.00000 0.00000    501 2331   101 149     82      1313   414     1100   248     0     0.0   0      0      aman N/A    N/A   N/A   N/A   N/A   N/A  
-99305* backupd-helper   0.0  00:07.95 2   1   60     2801K 0B   2464K 99305 1     sleeping  0[0]  0.00000 0.00000    0   3285   82  660     318     1269   1169    43642  167     0     0.0   0      0      root N/A    N/A   N/A   N/A   N/A   N/A  
+PID    COMMAND          %CPU TIME     #TH #WQ #PORTS MEM   PURG CMPRS PGRP  PPID  STATE    BOOSTS     %CPU_ME %CPU_OTHRS UID FAULTS COW MSGSENT MSGRECV SYSBSD SYSMACH CSW     PAGEINS IDLEW POWER INSTRS CYCLES USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+99392* AdGuard for Safa 0.0  00:00.29 7   1   78     12M   0B   12M   99383 99383 sleeping *0[1]      0.00000 0.00000    501 11195  468 409     340     1992   1336    1942    508     10    0.0   0      0      aman N/A    N/A   N/A   N/A   N/A   N/A  
+99390* AdGuard for Safa 0.0  00:22.36 13  5   142    55M   0B   28M   99383 99383 sleeping *1[11]     0.00000 0.00000    501 21448  538 2475    1186767 918545 2091342 1119485 2127    26    0.0   0      0      aman N/A    N/A   N/A   N/A   N/A   N/A  
+99383* AdGuard for Safa 0.0  00:03.68 23  1   354    56M   0B   43M   99383 1     sleeping *0[64]     0.00000 0.00000    501 98315  572 13224   4863    52173  89173   34739   4972    40    0.0   0      0      aman N/A    N/A   N/A   N/A   N/A   N/A  
+99115* PowerChime       0.0  00:21.95 6   1   467    12M   0B   7488K 99115 1     sleeping *0[1]      0.00000 0.00000    501 974764 189 165154  60982   491370 397210  483718  5935    134   0.0   0      0      aman N/A    N/A   N/A   N/A   N/A   N/A  
+99022* NotificationCent 0.0  01:25.18 7   5   638    87M   640K 49M   99022 1     sleeping *0[151221] 0.00000 0.00000    501 802054 442 1067090 453431  813145 3206273 1432860 41704   471   0.0   0      0      aman N/A    N/A   N/A   N/A   N/A   N/A  
+97632* contentlinkingd  0.0  00:01.08 2   1   56     3313K 0B   1648K 97632 1     sleeping *0[1024]   0.00000 0.00000    501 29769  97  5039    3267    21776  12064   13747   286     6     0.0   0      0      aman N/A    N/A   N/A   N/A   N/A   N/A  
+97513* cloudd           0.0  00:13.94 8/1 5/1 150    13M   512K 4896K 97513 1     running  *1[1025]   0.00000 0.00000    501 182628 181 31355   13680   257409 82860   120774  11407   73    0.0   0      0      aman N/A    N/A   N/A   N/A   N/A   N/A  
+96744* com.apple.WebKit 0.0  00:02.22 3   1   87     26M   0B   27M   96744 1     sleeping  0[901]    0.00000 0.00000    501 80917  168 37704   20067   32791  53360   21285   527     77    0.0   0      0      aman N/A    N/A   N/A   N/A   N/A   N/A  
+96743* pkd              0.0  00:07.69 3   2   89     5649K 0B   1040K 96743 1     sleeping *3[2732]   0.00000 0.00000    501 199481 91  41605   14680   113722 74094   91164   3594    12    0.0   0      0      aman N/A    N/A   N/A   N/A   N/A   N/A  
+96740* com.apple.WebKit 0.0  00:04.08 3   1   90     53M   0B   45M   96740 1     sleeping  0[1895]   0.00000 0.00000    501 103388 177 61359   34020   58334  96074   37428   1313    84    0.0   0      0      aman N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 472 total, 6 running, 1 stuck, 465 sleeping, 2962 threads 
+2023/04/13 01:18:40
+Load Avg: 32.82, 15.84, 8.63 
+CPU usage: 33.63% user, 27.26% sys, 39.10% idle 
+SharedLibs: 568M resident, 59M data, 200M linkedit.
+MemRegions: 255573 total, 1541M resident, 143M private, 1464M shared.
+PhysMem: 6495M used (2272M wired, 914M compressor), 1136M unused.
+VM: 187T vsize, 6955M framework vsize, 15895409(464) swapins, 18414528(0) swapouts.
+Networks: packets: 51748153/52G in, 32100694/29G out.
+Disks: 143334126/3618G read, 16782064/475G written.
+
+PID    COMMAND          %CPU TIME     #TH   #WQ #PORTS MEM    PURG   CMPRS  PGRP  PPID  STATE    BOOSTS      %CPU_ME %CPU_OTHRS UID FAULTS    COW    MSGSENT    MSGRECV    SYSBSD     SYSMACH    CSW        PAGEINS IDLEW    POWER INSTRS     CYCLES     USER          #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+17362* coreduetd        57.7 00:17.03 3     2   79-    7905K+ 0B     3664K- 17362 1     sleeping  0-[103]    0.00000 1.38640    0   45250+    147    1389+      368+       35763+     12853+     72938+     5692+   2        57.7  2716853920 1737139241 root          N/A    N/A   N/A   N/A   N/A   N/A  
+32701* Code Helper (Ren 52.8 02:03.71 15    1   167    69M    0B     34M    12398 12398 sleeping *0[2]       0.00000 0.00000    501 256695    469    68724+     37162+     111965+    185435+    1019139+   2141    9        52.8  7915532719 2197859633 aman          N/A    N/A   N/A   N/A   N/A   N/A  
+31739* backupd-helper   41.2 00:03.42 3/1   2/1 44     2577K  0B     688K   31739 1     running   0[0]       0.00000 0.98429    0   972       79     350        165        712        461        20166+     77      0        41.2  2842684693 1229745056 root          N/A    N/A   N/A   N/A   N/A   N/A  
+133*   mds              37.5 29:26.77 10    7   736+   43M+   0B     29M-   133   1     stuck    *0[1]       0.22511 0.84926    0   9675440+  130    2410592+   1668320+   39655341+  5498610+   17643014+  107061  19953    37.5  1336421125 1120898526 root          N/A    N/A   N/A   N/A   N/A   N/A  
+175*   WindowServer     25.4 07:56:43 21    6   7571-  1037M- 9312K+ 330M-  175   1     sleeping *0[1]       0.04194 0.00530    88  51827767+ 160584 270199272+ 182497716+ 289879050+ 685061134+ 193800447+ 89265   819370   25.4  535667718  766819774  _windowserver N/A    N/A   N/A   N/A   N/A   N/A  
+0*     kernel_task      22.8 11:00:15 474/8 0   0      32M-   0B     0B     0     0     running   0[0]       0.00000 0.00000    0   99300     0      2147483647 2147483647 0          0          2147483647 0       44992987 0.0   481221415  699619866  root          N/A    N/A   N/A   N/A   N/A   N/A  
+12401* Code Helper (GPU 21.3 20:44.95 15/1  5   218    673M-  704K   75M-   12398 12398 running  *1[5]       0.00229 0.00000    501 9151081+  533    13430179+  42100073+  36762454+  83616604+  38258413+  100797+ 8659     21.3  1492467552 839686956  aman          N/A    N/A   N/A   N/A   N/A   N/A  
+97513* cloudd           20.7 00:14.24 8     5   150    13M+   944K+  4144K- 97513 1     sleeping *1[1025]    0.39135 0.00000    501 182999+   181    31877+     13795+     264157+    85662+     124324+    11408+  73       20.7  657421033  623833027  aman          N/A    N/A   N/A   N/A   N/A   N/A  
+176*   tccd             8.7  87:18.05 4     3   60+    13M+   128K   2624K- 176   1     sleeping *0[508266+] 0.00000 0.19792    0   4853672+  86     4480277+   2804788+   179309861+ 13002943+  21302938+  77131+  135      8.7   307334423  266445912  root          N/A    N/A   N/A   N/A   N/A   N/A  
+34222* top              8.0  00:00.50 2/1   0   35+    5281K+ 0B     0B     32809 32849 running  *0[1]       0.00089 0.00000    0   4845+     315+   555563+    277771+    5638+      286738+    387+       0       0        8.0   774895615  311320095  root          N/A    N/A   N/A   N/A   N/A   N/A  
