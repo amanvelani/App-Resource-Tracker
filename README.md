@@ -38,9 +38,10 @@ Start the server
 - Whitelisted applications displayed in different colors, making it easier for users to identify processes that are part of the allowlist.
 
 ## Screenshots
-
+### Application UI:
 ![App Screenshot](https://raw.githubusercontent.com/amanvelani/App-Resource-Tracker/main/Screenshot/Application_UI.png "Optional Title")
-
+### Notification:
+![App Screenshot](https://raw.githubusercontent.com/amanvelani/App-Resource-Tracker/main/Screenshot/Notification.png "Optional Title")
 
 
 ## Demo
