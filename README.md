@@ -39,7 +39,7 @@ Start the server
 
 ## Screenshots
 
-![App Screenshot](/../main/Screenshot/Application_UI?raw=true "Optional Title")
+![App Screenshot](/main/Screenshot/Application_UI?raw=true "Optional Title")
 
 
 
