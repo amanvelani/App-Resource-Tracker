@@ -62,7 +62,7 @@
             // 'subtitle': void 0,
             'message': `${process} is using ${value}% CPU`,
             'sound': false, // Case Sensitive string for location of sound file, or use one of OS X's native sounds (see below) 
-            'icon': '/Users/aman/Documents/ISSQUARED/CPU-Tracker/src/app_icon.png', // Absolute Path to Triggering Icon 
+            'icon': path.join(__dirname, 'app_icon.png'), // Absolute Path to Triggering Icon 
             'actions': ['Kill'],
             'closeLable': 'Close',
             'group': 'my-group',
@@ -71,9 +71,9 @@
             //   { type: 'button', text: 'Action 1'}
             // ],
 
-            'contentImage': '/Users/aman/Documents/ISSQUARED/CPU-Tracker/src/app_icon.png', // Absolute Path to Attached Image (Content Image) 
+            'contentImage': path.join(__dirname, 'app_icon.png'), // Absolute Path to Attached Image (Content Image) 
             // 'open': void 0, // URL to open on Click 
-            'wait': true // Wait for User Action against Notification 
+            'wait': false // Wait for User Action against Notification 
 
           }, function(error, response) {
             if(error) console.log(error)

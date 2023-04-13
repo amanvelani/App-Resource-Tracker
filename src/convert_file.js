@@ -1,10 +1,14 @@
 // const { renderFile } = require('ejs');
 const fs = require('fs');
+const path = require('path');
+
 // const renderFile = require('./render.js');
 
 
 function convertFile(){
-    fs.readFile('/Users/aman/Documents/ISSQUARED/CPU-Tracker/top-output.txt', 'utf8', function(err, data) {
+    const readFile = path.join(__dirname, '..', 'top-output.txt')
+
+    fs.readFile(readFile, 'utf8', function(err, data) {
         if (err) {
             console.log(err);
         } else {

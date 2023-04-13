@@ -1,35 +1,67 @@
-<h1 align="center">Welcome to CPU-Tracker 👋</h1>
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-  <a href="#" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
-  </a>
-</p>
 
-> A cross-platform application to monitor and terminate unnecessary background processes and a user-friendly interface that will allow users to manage and stop background processes.
+# App Resource Tracker
 
-## Install
+A cross-platform application to monitor and terminate unnecessary background processes and a user-friendly interface that will allow users to manage and stop background processes.
 
-```sh
-npm install
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000) 
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://link-to-project
 ```
 
-## Usage
+Go to the project directory
 
-```sh
-npm run start
+```bash
+  cd my-project
 ```
 
-## Author
+Install dependencies
 
-👤 **Aman Velani**
+```bash
+  npm install
+```
 
-* Github: [@amanvelani](https://github.com/amanvelani)
-* LinkedIn: [@amanvelani](https://linkedin.com/in/amanvelani)
+Start the server
 
-## Show your support
+```bash
+  npm run start
+```
 
-Give a ⭐️ if this project helped you!
 
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+## Features
+
+- An intuitive and visually pleasing interface to view processes efficiently.
+- The ability to terminate processes both from within the app and via notifications.
+- Whitelisted applications displayed in different colors, making it easier for users to identify processes that are part of the allowlist.
+
+## Screenshots
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+
+## Demo
+
+Insert gif or link to demo
+
+
+## Roadmap
+
+- Linking of processes with their corresponding applications
+- Utilizing the Mac platform for Android operations while acknowledging the OS-dependency in data collection.
+- Automated process termination based on a comprehensive allowlist
+- Integration of a JSON/CSV file from a trusted source to build and update an allowlist. Additionally, the application can identify and terminate processes that are not part of the allowlist while logging this information for future improvements.
+- Implementation of a static whitelist that doesn't require user input.
+
+
+## Tech Stack
+
+**Application:** Electron, NodeJs, HTML, CSS
+
+
+## 🔗 Links
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/amanvelani)
+
+

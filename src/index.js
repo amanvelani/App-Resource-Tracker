@@ -8,10 +8,11 @@ const { exec } = require("child_process");
 const fs = require('fs');
 const csv  = require('csv-parser');
 const convertFile = require('./convert_file.js');
-const renderFile = require('./render.js');
 // import convertFile from ('./convert_file')
 const filename = 'top-output.txt';
-const inputFile = '/Users/aman/Documents/ISSQUARED/CPU-Tracker/output.csv';
+const inputFile = path.join(__dirname, '..', 'output.csv')
+
+
 // const outputFile = '/Users/aman/Documents/ISSQUARED/CPU-Tracker/src/index.html';
 function saveTopOutputToFile() {
   // let abortController = new AbortController();
