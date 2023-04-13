@@ -46,7 +46,7 @@ Start the server
 
 ## Demo
 
-![] ()
+![] (https://github.com/amanvelani/App-Resource-Tracker/blob/main/Demo/Kill_process_demo.gif) 
 
 ## Roadmap
 
