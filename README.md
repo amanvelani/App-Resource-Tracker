@@ -46,7 +46,7 @@ Start the server
 
 ## Demo
 
-![alt text](https://imgur.com/a/4AL4Was)
+![Imgur](https://imgur.com/a/4AL4Was)
 
 ## Roadmap
 
