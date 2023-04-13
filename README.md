@@ -46,7 +46,7 @@ Start the server
 
 ## Demo
 
-![Imgur](https://imgur.com/a/4AL4Was)
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/4AL4Was" data-context="false" ><a href="//imgur.com/a/4AL4Was"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 ## Roadmap
 
