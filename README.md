@@ -46,10 +46,7 @@ Start the server
 
 ## Demo
 
-
-
-
-https://user-images.githubusercontent.com/66882841/231659936-c6a743d6-4041-456e-82e6-632a9ff69f51.mp4
+![alt text](https://github.com/amanvelani/App-Resource-Tracker/blob/main/Demo/Kill_process_demo.gif)
 
 
 
