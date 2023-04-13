@@ -46,12 +46,12 @@ Start the server
 
 ## Demo
 
-![](https://github.com/amanvelani/App-Resource-Tracker/blob/main/Demo/Kill_process_demo.mov) 
+![](https://github.com/amanvelani/App-Resource-Tracker/blob/main/Demo/Kill_process_demo.gif) 
 
 ## Roadmap
 
 - Linking of processes with their corresponding applications
-- Utilizing the Mac platform for Android operations while acknowledging the OS-dependency in data collection.
+- Processes data collection part to be made platform-independent.
 - Automated process termination based on a comprehensive allowlist
 - Integration of a JSON/CSV file from a trusted source to build and update an allowlist. Additionally, the application can identify and terminate processes that are not part of the allowlist while logging this information for future improvements.
 - Implementation of a static whitelist that doesn't require user input.
@@ -59,7 +59,7 @@ Start the server
 
 ## Tech Stack
 
-**Application:** Electron, NodeJs, HTML, CSS
+#### Electron JS, NodeJs, HTML, CSS
 
 
 ## 🔗 Links
