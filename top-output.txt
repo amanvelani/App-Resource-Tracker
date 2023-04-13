@@ -1,47 +1,47 @@
 
 
-[2023-04-12T23:22:15.560Z]
-Processes: 447 total, 5 running, 442 sleeping, 2680 threads 
-2023/04/12 19:22:14
-Load Avg: 22.16, 13.26, 7.69 
-CPU usage: 25.54% user, 16.30% sys, 58.15% idle 
-SharedLibs: 566M resident, 56M data, 192M linkedit.
-MemRegions: 205322 total, 1654M resident, 162M private, 1124M shared.
-PhysMem: 6396M used (1921M wired, 831M compressor), 1233M unused.
-VM: 170T vsize, 6955M framework vsize, 13134260(0) swapins, 15226932(0) swapouts.
-Networks: packets: 44363368/44G in, 27477844/24G out.
-Disks: 135063005/3441G read, 15070304/410G written.
+[2023-04-12T23:43:06.333Z]
+Processes: 445 total, 5 running, 440 sleeping, 2957 threads 
+2023/04/12 19:43:05
+Load Avg: 7.51, 4.79, 4.51 
+CPU usage: 23.20% user, 17.29% sys, 59.49% idle 
+SharedLibs: 309M resident, 73M data, 188M linkedit.
+MemRegions: 252727 total, 1327M resident, 89M private, 732M shared.
+PhysMem: 7345M used (1784M wired, 3055M compressor), 286M unused.
+VM: 174T vsize, 6955M framework vsize, 13205276(0) swapins, 15232183(0) swapouts.
+Networks: packets: 44822742/45G in, 27859345/25G out.
+Disks: 135840983/3454G read, 15138466/412G written.
 
-PID    COMMAND          %CPU TIME     #TH #WQ #PORTS MEM   PURG CMPRS PGRP  PPID  STATE    BOOSTS   %CPU_ME %CPU_OTHRS UID FAULTS COW   MSGSENT MSGRECV SYSBSD  SYSMACH CSW     PAGEINS IDLEW POWER INSTRS CYCLES USER #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
-99115* PowerChime       0.0  00:19.04 6   1   459    12M   0B   6512K 99115 1     sleeping *0[1]    0.00000 0.00000    501 851341 189   153000  50883   409589  358971  434439  5744    118   0.0   0      0      aman N/A    N/A   N/A   N/A   N/A   N/A  
-96233* LocationMenu     0.0  00:04.74 3   1   149    9394K 0B   6016K 96233 1     sleeping *0[278]  0.00000 0.00000    501 142823 129   11020   3914    16393   29232   27432   1745    19    0.0   0      0      aman N/A    N/A   N/A   N/A   N/A   N/A  
-94114* Calendar         0.0  01:54.03 3/1 1   365    50M   64K  30M   94114 1     running  *1[4240] 0.00000 0.00000    501 867346 248   1773811 315472  1101245 3565649 1346502 16343   79    0.0   0      0      aman N/A    N/A   N/A   N/A   N/A   N/A  
-93769* zsh              0.0  00:03.88 1   0   22     4033K 0B   3760K 93769 12443 sleeping *0[1]    0.00000 0.00000    501 242549 98162 8386    4187    436650  4344    53257   10668   0     0.0   0      0      aman N/A    N/A   N/A   N/A   N/A   N/A  
-91191* top              0.0  00:00.24 2/1 0   22     4833K 0B   0B    90286 90307 running  *0[1]    0.00000 0.00000    0   4190   293   439110  219550  3621    223774  65      0       0     0.0   0      0      root N/A    N/A   N/A   N/A   N/A   N/A  
-91150* mdworker_shared  0.0  00:00.07 4   2   55     2641K 0B   0B    91150 1     sleeping *0[1]    0.00000 0.00000    501 1451   96    457     195     651     499     226     7       0     0.0   0      0      aman N/A    N/A   N/A   N/A   N/A   N/A  
-91149* mdworker_shared  0.0  00:00.07 4   2   55     2657K 0B   0B    91149 1     sleeping *0[1]    0.00000 0.00000    501 1447   96    456     194     658     492     237     7       0     0.0   0      0      aman N/A    N/A   N/A   N/A   N/A   N/A  
-91097* corekdld         0.0  00:00.04 2   1   38     2481K 0B   0B    91097 1     sleeping *0[1]    0.00000 0.00000    0   588    63    98      43      414     240     214     5       0     0.0   0      0      root N/A    N/A   N/A   N/A   N/A   N/A  
-91096* knowledgeconstru 0.0  00:04.72 4/1 3/1 133    20M   608K 0B    91096 1     running  *0[1]    0.00000 0.00000    501 5151   213   10885   157     15648   22052   16196   1065    0     0.0   0      0      aman N/A    N/A   N/A   N/A   N/A   N/A  
-91095* ASPCarryLog      0.0  00:00.06 2   1   36     3217K 0B   0B    91095 1     sleeping *0[1]    0.00000 0.00000    0   883    91    116     44      695     266     263     24      0     0.0   0      0      root N/A    N/A   N/A   N/A   N/A   N/A  
-Processes: 448 total, 5 running, 443 sleeping, 2641 threads 
-2023/04/12 19:22:15
-Load Avg: 20.71, 13.11, 7.66 
-CPU usage: 18.39% user, 8.27% sys, 73.33% idle 
-SharedLibs: 566M resident, 56M data, 192M linkedit.
-MemRegions: 205523 total, 1661M resident, 162M private, 1125M shared.
-PhysMem: 6377M used (1773M wired, 830M compressor), 1253M unused.
-VM: 171T vsize, 6955M framework vsize, 13134272(12) swapins, 15226932(0) swapouts.
-Networks: packets: 44363859/44G in, 27478413/24G out.
-Disks: 135063009/3441G read, 15070304/410G written.
+PID    COMMAND          %CPU TIME     #TH #WQ #PORTS MEM   PURG CMPRS PGRP  PPID  STATE    BOOSTS   %CPU_ME %CPU_OTHRS UID FAULTS COW  MSGSENT MSGRECV SYSBSD SYSMACH CSW    PAGEINS IDLEW POWER INSTRS CYCLES USER        #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+99538* Code Helper (Plu 0.0  00:00.20 10  1   54     16M   0B   15M   12398 92305 sleeping *0[1]    0.00000 0.00000    501 4793   451  85      29      2072   387     1819   1446    17    0.0   0      0      aman        N/A    N/A   N/A   N/A   N/A   N/A  
+99322* zsh              0.0  00:00.10 1   0   22     3553K 0B   3280K 99322 12443 sleeping *0[1]    0.00000 0.00000    501 4140   1776 191     90      32452  243     723    160     0     0.0   0      0      aman        N/A    N/A   N/A   N/A   N/A   N/A  
+99306* routined         0.0  00:01.58 2   1   164    12M   0B   15M   99306 1     sleeping *0[14]   0.00000 0.00000    501 10697  183  1167    398     44035  18135   13425  682     0     0.0   0      0      aman        N/A    N/A   N/A   N/A   N/A   N/A  
+99115* PowerChime       0.0  00:19.24 8   3   462    12M   0B   7120K 99115 1     sleeping *0[1]    0.00000 0.00000    501 860800 189  154272  51408   414459 361900  438380 5808    118   0.0   0      0      aman        N/A    N/A   N/A   N/A   N/A   N/A  
+99032* iconservicesagen 0.0  00:00.16 3   2   57     6769K 0B   5392K 99032 1     sleeping *0[6]    0.00000 0.00000    501 2992   111  610     281     2770   744     857    239     0     0.0   0      0      aman        N/A    N/A   N/A   N/A   N/A   N/A  
+99022* NotificationCent 0.0  00:04.05 8   6   336    34M   32K  11M   99022 1     sleeping *1[91]   0.00000 0.00000    501 21644  379  29242   7629    31656  68797   29032  3637    60    0.0   0      0      aman        N/A    N/A   N/A   N/A   N/A   N/A  
+98328* com.apple.audio. 0.0  00:00.15 4   1   213    4885K 0B   4592K 98328 1     sleeping *0[1361] 0.00000 0.00000    202 3361   66   3944    2721    12007  7231    2367   63      0     0.0   0      0      _coreaudiod N/A    N/A   N/A   N/A   N/A   N/A  
+97428* ScreenTimeAgent  0.0  00:01.58 2   1   126    9537K 0B   9360K 97428 1     sleeping *0[34]   0.00000 0.00000    501 7342   165  829     457     41699  37060   7126   400     1     0.0   0      0      aman        N/A    N/A   N/A   N/A   N/A   N/A  
+97162* AppleSpell       0.0  00:01.71 2   1   156    14M   0B   14M   97162 1     sleeping *0[1]    0.00000 0.00000    501 8277   168  1075    450     24173  2773    4151   1583    0     0.0   0      0      aman        N/A    N/A   N/A   N/A   N/A   N/A  
+97115* com.apple.Safari 0.0  00:00.21 2   1   60     5729K 0B   5056K 97115 1     sleeping *0[24]   0.00000 0.00000    501 4491   113  539     217     4067   1132    1718   909     0     0.0   0      0      aman        N/A    N/A   N/A   N/A   N/A   N/A  
+Processes: 445 total, 2 running, 443 sleeping, 2948 threads 
+2023/04/12 19:43:06
+Load Avg: 6.99, 4.73, 4.49 
+CPU usage: 13.43% user, 5.37% sys, 81.18% idle 
+SharedLibs: 309M resident, 73M data, 188M linkedit.
+MemRegions: 252727 total, 1327M resident, 89M private, 732M shared.
+PhysMem: 7414M used (1807M wired, 3045M compressor), 215M unused.
+VM: 174T vsize, 6955M framework vsize, 13205276(0) swapins, 15232183(0) swapouts.
+Networks: packets: 44822749/45G in, 27859350/25G out.
+Disks: 135841014/3454G read, 15138466/412G written.
 
-PID    COMMAND          %CPU TIME     #TH   #WQ #PORTS MEM    PURG   CMPRS PGRP  PPID  STATE    BOOSTS       %CPU_ME %CPU_OTHRS UID FAULTS    COW    MSGSENT    MSGRECV    SYSBSD     SYSMACH    CSW        PAGEINS IDLEW    POWER INSTRS     CYCLES     USER          #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
-50177* contactsd        59.6 01:08.98 5     4   327-   21M+   4848K  9632K 50177 1     sleeping  0[15043]    0.00000 1.29727    501 151475+   284    102886+    99104+     2189057+   661555+    474318+    886     4        59.6  1164251664 1007328985 aman          N/A    N/A   N/A   N/A   N/A   N/A  
-91096* knowledgeconstru 33.2 00:05.15 3/1   2/1 130-   20M+   608K   0B    91096 1     running   0[1]        1.26431 0.00000    501 5197+     213    11906+     158+       16705+     24094+     17486+     1066+   0        33.2  731884016  556876526  aman          N/A    N/A   N/A   N/A   N/A   N/A  
-175*   WindowServer     20.2 06:47:55 21    6   6724+  848M+  3488K- 272M- 175   1     sleeping *0[1]        0.13211 0.00883    88  43277947+ 139583 228536615+ 154826719+ 248804122+ 584254313+ 165614194+ 85255   715878   20.2  291768157  357351738  _windowserver N/A    N/A   N/A   N/A   N/A   N/A  
-0*     kernel_task      15.5 09:55:14 472/8 0   0      54M+   0B     0B    0     0     running   0[0]        0.00000 0.00000    0   83751     0      2147483647 2147483647 0          0          2147483647 0       41902094 0.0   117203008  273270092  root          N/A    N/A   N/A   N/A   N/A   N/A  
-12406* Code Helper (Ren 7.8  41:13.88 23    1   248-   378M+  0B     179M- 12398 12398 sleeping *0[5]        0.00000 0.00000    501 28054750+ 3210   8817674+   3970796+   16419529+  35392686+  30979730+  457146  26855    7.8   236485018  198301387  aman          N/A    N/A   N/A   N/A   N/A   N/A  
-91191* top              7.1  00:00.34 2/1   0   33+    5053K+ 0B     0B    90286 90307 running  *0[1]        0.00067 0.00000    0   4709+     295+   452225+    226102+    5457+      234348+    82+        0       0        7.1   765100658  277780177  root          N/A    N/A   N/A   N/A   N/A   N/A  
-174*   syspolicyd       5.9  01:54:34 4/1   2/1 191+   27M    256K   18M   174   1     running  *0[1]        0.00000 0.13681    0   3330357   120    1020360+   538124+    9080965+   4005810+   17507446+  321887  1308     5.9   552276203  156469249  root          N/A    N/A   N/A   N/A   N/A   N/A  
-12401* Code Helper (GPU 4.8  15:55.94 14    5   181-   390M-  2048K+ 52M-  12398 12398 sleeping *1[5]        0.00341 0.00000    501 4415756+  529    11430282+  28974872+  26921235+  60309421+  29062474+  83505   7594     4.8   79344107   91474370   aman          N/A    N/A   N/A   N/A   N/A   N/A  
-176*   tccd             4.1  77:21.20 3     2   62+    13M    128K   2416K 176   1     sleeping *2+[450596+] 0.00000 0.09839    0   4189692   86     3986880+   2502605+   159212952+ 11570516+  19604708+  71624   121      4.1   202144830  102749889  root          N/A    N/A   N/A   N/A   N/A   N/A  
-218*   trustd           3.5  67:20.70 4     3   122    7489K  896K   2608K 218   1     sleeping *0[1834164+] 0.00000 0.08355    282 3995408   93     2195956+   2198788+   42518205+  24649366+  14655639+  7216    1896     3.5   200232465  88062361   _trustd       N/A    N/A   N/A   N/A   N/A   N/A  
+PID    COMMAND          %CPU TIME     #TH   #WQ #PORTS MEM    PURG  CMPRS  PGRP  PPID  STATE    BOOSTS      %CPU_ME %CPU_OTHRS UID FAULTS    COW    MSGSENT    MSGRECV    SYSBSD     SYSMACH    CSW        PAGEINS IDLEW     POWER INSTRS    CYCLES    USER          #MREGS RPRVT VPRVT VSIZE KPRVT KSHRD
+175*   WindowServer     24.2 06:51:14 19    4   6784+  917M+  46M+  304M-  175   1     sleeping *0[1]       0.07240 0.01099    88  43736473+ 142032 230842160+ 156481858+ 251570038+ 590556502+ 167150200+ 85427   720620+   24.4  611782070 631548833 _windowserver N/A    N/A   N/A   N/A   N/A   N/A  
+2880*  com.apple.WebKit 21.8 00:06.93 13    4   129    621M-  43M+  119M-  2880  1     sleeping *0[514+]    0.00000 0.00000    501 70305+    204    22838+     13059+     35767+     42146+     27944+     1174    23+       22.0  570010063 536780896 aman          N/A    N/A   N/A   N/A   N/A   N/A  
+99022* NotificationCent 11.9 00:04.21 8     6   348+   35M+   128K+ 9600K- 99022 1     sleeping *0-[91]     0.00379 0.00526    501 21999+    379    29979+     7855+      32186+     70653+     29548+     3638+   60        11.9  260109910 295297580 aman          N/A    N/A   N/A   N/A   N/A   N/A  
+0*     kernel_task      10.2 09:58:21 470/8 0   0      54M+   0B    0B     0     0     running   0[0]       0.00000 0.00000    0   83976     0      2147483647 2147483647 0          0          2147483647 0       42218657+ 0.0   103797993 239332168 root          N/A    N/A   N/A   N/A   N/A   N/A  
+1322*  Termius Helper ( 8.7  00:15.59 22    1   162    58M+   0B    49M-   1307  1307  sleeping *0[1]       0.00000 0.00000    501 21876+    513    84167+     15196+     67021+     276650+    111794+    1094    13+       8.8   78392004  180657594 aman          N/A    N/A   N/A   N/A   N/A   N/A  
+3016*  top              8.4  00:00.43 2/1   0   32+    5121K+ 0B    0B     2526  2548  running  *0[1]       0.00099 0.00000    0   4722+     287+   548203+    274091+    5445+      282919+    480+       22+     0         8.4   780958364 300202981 root          N/A    N/A   N/A   N/A   N/A   N/A  
+230*   coreaudiod       5.2  46:35.94 32    25  24714  410M   0B    335M-  230   1     sleeping *0[1]       0.00131 0.00050    202 8488759+  1547   20410828+  8880993+   87868947+  39301373+  45028366+  273956+ 89533     5.2   310749685 140107326 _coreaudiod   N/A    N/A   N/A   N/A   N/A   N/A  
+174*   syspolicyd       4.8  01:55:26 5     3   194    27M    128K+ 20M-   174   1     sleeping *0[1]       0.00000 0.11586    0   3339879+  120    1028674+   542648+    9131543+   4037637+   17531018+  322390  1319      4.8   577383194 149717419 root          N/A    N/A   N/A   N/A   N/A   N/A  
+26108* corespeechd      4.1  03:24.93 11    4   438    20M-   0B    5920K- 26108 1     sleeping *0[1]       0.00000 0.00000    501 868593+   191    664418+    70364      2283519+   938374+    1658527+   51833   116       4.1   107278943 90396981  aman          N/A    N/A   N/A   N/A   N/A   N/A  
+176*   tccd             3.7  78:01.92 5     4   62     13M-   128K+ 2480K- 176   1     sleeping *0[454785+] 0.00000 0.08807    0   4203711+  86     4022457+   2525101+   160636812+ 11674066+  19696378+  72020   121       3.7   228061146 111832085 root          N/A    N/A   N/A   N/A   N/A   N/A  

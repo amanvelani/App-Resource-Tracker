@@ -62,16 +62,16 @@
             // 'subtitle': void 0,
             'message': `${process} is using ${value}% CPU`,
             'sound': false, // Case Sensitive string for location of sound file, or use one of OS X's native sounds (see below) 
-            'icon': '/Users/aman/Documents/ISSQUARED/CPU-Tracker/src/app_icon.jpeg', // Absolute Path to Triggering Icon 
+            'icon': '/Users/aman/Documents/ISSQUARED/CPU-Tracker/src/app_icon.png', // Absolute Path to Triggering Icon 
             'actions': ['Kill'],
-
-            
+            'closeLable': 'Close',
+            'group': 'my-group',
             // 'reply': true,
             // 'actions': [
             //   { type: 'button', text: 'Action 1'}
             // ],
 
-            // 'contentImage': void 0, // Absolute Path to Attached Image (Content Image) 
+            'contentImage': '/Users/aman/Documents/ISSQUARED/CPU-Tracker/src/app_icon.png', // Absolute Path to Attached Image (Content Image) 
             // 'open': void 0, // URL to open on Click 
             'wait': true // Wait for User Action against Notification 
 
@@ -82,6 +82,7 @@
               kill(local_pid);
             }
           });
+
     }
   }
 });
