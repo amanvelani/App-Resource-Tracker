@@ -46,7 +46,11 @@ Start the server
 
 ## Demo
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/4AL4Was" data-context="false" ><a href="//imgur.com/a/4AL4Was"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
+
+https://user-images.githubusercontent.com/66882841/231659685-339a16f9-8be3-4c2d-af72-0e3d24877ee7.mov
+
+
 
 ## Roadmap
 
