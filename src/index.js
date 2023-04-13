@@ -13,7 +13,6 @@ const filename = 'top-output.txt';
 const inputFile = path.join(__dirname, '..', 'output.csv')
 
 
-// const outputFile = '/Users/aman/Documents/ISSQUARED/CPU-Tracker/src/index.html';
 function saveTopOutputToFile() {
   // let abortController = new AbortController();
   const stdout = execSync('top -o cpu -n 10 -l 2');
