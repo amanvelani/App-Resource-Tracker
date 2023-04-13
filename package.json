@@ -1,6 +1,6 @@
 {
-  "name": "cpu-tracker",
-  "productName": "cpu-tracker",
+  "name": "app-resource-tracker",
+  "productName": "app-resource-tracker",
   "version": "1.0.0",
   "description": "A cross-platform application to monitor and terminate unnecessary background processes and a user-friendly interface that will allow users to manage and stop background processes.",
   "main": "src/index.js",
@@ -13,7 +13,7 @@
     "build-installer": "electron-builder"
   },
   "build": {
-    "appId": "cpu-monitor",
+    "appId": "App-Resource-Tracker",
     "win": {
       "target": [
         "nsis"
@@ -32,7 +32,6 @@
   },
   "keywords": [],
   "author": "Aman Velani",
-  "license": "MIT",
   "config": {
     "forge": {
       "packagerConfig": {},
@@ -40,7 +39,7 @@
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "cpu-tracker"
+            "name": "app-resource-tracker"
           }
         },
         {

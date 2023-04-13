@@ -9,13 +9,13 @@ A cross-platform application to monitor and terminate unnecessary background pro
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/amanvelani/App-Resource-Tracker.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd App-Resource-Tracker
 ```
 
 Install dependencies
