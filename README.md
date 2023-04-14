@@ -35,7 +35,7 @@ Start the server
 
 - An intuitive and visually pleasing interface to view processes efficiently.
 - The ability to terminate processes both from within the app and via notifications.
-- Whitelisted applications displayed in different colors, making it easier for users to identify processes that are part of the allowlist.
+- Whitelisted applications displayed in different colors, making it easier for users to identify processes that are part of the allowlist.(In process)
 
 ## Screenshots
 ### Application UI:
