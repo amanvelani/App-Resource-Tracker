@@ -11,7 +11,8 @@ const convertFile = require('./convert_file.js');
 // import convertFile from ('./convert_file')
 const filename = 'top-output.txt';
 const inputFile = path.join(__dirname, '..', 'output.csv')
-
+const whitlistFile = path.join(__dirname, '..', 'whitlist.txt')
+let whitelistFinal;
 
 function saveTopOutputToFile() {
   // let abortController = new AbortController();
@@ -34,62 +35,78 @@ function saveTopOutputToFile() {
   }); 
 }
 
-function generateHTMLOutput(){
+function getDataWhiteList(file) {
+  return new Promise((resolve, reject) => {
+    fs.readFile(file, 'utf8', (err, data) => {
+      if (err) reject(err);
+      const whitelist = data.split(',');
+      resolve(whitelist);
+    });
+  });
+}
+
+
+function generateHTMLOutput() {
   return new Promise((resolve, reject) => {
     let htmlContent = '';
     let isFirstRow = true;
-
     let pid_val = null;
     let cpu_val = null;
     let process_name = null;
-    fs.createReadStream(inputFile)
-      .pipe(csv())
-      .on('data', (data) => {
-        htmlContent += '<tr>\n';
-        for (const [key, value] of Object.entries(data)) {
-          // if (isFirstRow) {
-          //   if(['PID','COMMAND','%CPU','TIME','MEM','STATE','POWER','USER'].includes(key)){
-          //     th += key + ',';
-          //     htmlContent += `<th class="table-primary">${key}</th>\n`;
-          //   }
-          // } else {
-            if(['PID','COMMAND','%CPU','TIME','MEM','STATE','POWER','USER'].includes(key)){
-              if(key == 'PID'){
-                pid_val = value;
-                pid_val = pid_val.replace("*","");
-                htmlContent += `<td class="table-secondary" id = "pid">${pid_val}</td>\n`;
-              }else if(key == '%CPU'){
-                cpu_val = value;
-                htmlContent += `<td class="table-secondary" id = "cpu_val">${cpu_val}</td>\n`;
+
+    getDataWhiteList(whitlistFile)
+      .then((whitelist) => {
+        // console.log(whitelist);
+
+        fs.createReadStream(inputFile)
+          .pipe(csv())
+          .on('data', (data) => {
+            htmlContent += '<tr>\n';
+
+            for (const [key, value] of Object.entries(data)) {
+              if (['PID', 'COMMAND', '%CPU', 'TIME', 'MEM', 'STATE', 'POWER', 'USER'].includes(key)) {
+                if (key == 'PID') {
+                  pid_val = value;
+                  pid_val = pid_val.replace("*", "");
+                  htmlContent += `<td class="table-secondary" id = "pid">${pid_val}</td>\n`;
+                } else if (key == '%CPU') {
+                  cpu_val = value;
+                  htmlContent += `<td class="table-secondary" id = "cpu_val">${cpu_val}</td>\n`;
+                } else if (key == 'COMMAND') {
+                  process_name = value;
+                  // console.log("Inside Command: " + whitelist);
+
+                  if (whitelist.includes(process_name)) {
+                    htmlContent += `<td class="table-success" id = "process_name">${process_name}</td>\n`;
+                  } else {
+                    htmlContent += `<td class="table-secondary" id = "process_name">${process_name}</td>\n`;
+                  }
+                } else {
+                  htmlContent += `<td class="table-secondary">${value}</td>\n`;
+                }
               }
-              else if(key == 'COMMAND'){
-                process_name = value;
-                htmlContent += `<td class="table-secondary" id = "process_name">${process_name}</td>\n`;
-              }
-              else {
-                // tr += value + ',';
-                // console.log("Inside TR: "+tr);
-                htmlContent += `<td class="table-secondary">${value}</td>\n`;
-              }
-            // } 
-          }
-        }
-        htmlContent += `<td class="table-secondary" onclick="kill('${pid_val}')"> <button type="button" class="btn btn-outline-danger">Close</button>
-        </td>\n`;
-        htmlContent += '</tr>\n';
-        isFirstRow = false;
+            }
+
+            htmlContent += `<td class="table-secondary" onclick="kill('${pid_val}')"> <button type="button" class="btn btn-outline-danger">Close</button>
+            </td>\n`;
+            htmlContent += '</tr>\n';
+
+            isFirstRow = false;
+          })
+          .on('end', () => {
+            resolve(htmlContent);
+          })
+          .on('error', (err) => {
+            reject(err);
+          });
       })
-      .on('end', () => {
-        // const value = tr.split(',');
-        // console.log(th);
-        // console.log(tr);
-        resolve(htmlContent);
-      })
-      .on('error', (err) => {
+      .catch((err) => {
+        console.error(err);
         reject(err);
       });
   });
 }
+
 
 
 

@@ -1,0 +1,1 @@
+WindowServer,top,Safari,com.apple.WebKit,syspolicyd,Code
