@@ -140,30 +140,14 @@ const createWindow = () => {
   setInterval(() => {
     generateHTMLOutput()
       .then((htmlContent) => {
+        saveTopOutputToFile();
         const send = htmlContent;
-        // console.log("Send" + send);
         mainWindow.webContents.send("cpu", send);
     })
   }, 10000); 
-
-
-
-  // Open the DevTools.
-  // mainWindow.webContents.openDevTools();
-    // Retrieve the CSV file using the fetch() API
-
-  // setInterval(() => {
-  //   os.cpuUsage(function (v) {
-  //     mainWindow.webContents.send("cpu", v * 100);
-  //     mainWindow.webContents.send("mem", os.freemem()/1024);
-  //     mainWindow.webContents.send("total-mem", os.totalmem() / 1024);
-  //   });
-  // }, 1000);
 };
 
-// setInterval(() => saveTopOutputToFile(), 5000); // run the command every 5 seconds
-setInterval(saveTopOutputToFile, 3000);
-// setTimeout(saveTopOutputToFile, 1000);
+
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.

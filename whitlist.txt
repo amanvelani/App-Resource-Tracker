@@ -1,1 +1,1 @@
-WindowServer,top,Safari,com.apple.WebKit,syspolicyd,Code
+WindowServer,top,com.apple.WebKit,syspolicyd,Code

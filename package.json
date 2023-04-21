@@ -24,7 +24,7 @@
     "nsis": {
       "installerIcon": "src/app_icon.jpeg",
       "uninstallerIcon": "src/app_icon.jpeg",
-      "uninstallDisplayName": "CPU Monitor",
+      "uninstallDisplayName": "App Resource Tracker",
       "license": "LICENSE",
       "oneClick": false,
       "allowToChangeInstallationDirectory": true

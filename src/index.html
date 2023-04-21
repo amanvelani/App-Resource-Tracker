@@ -24,8 +24,6 @@
 
   </tbody>
 </table>
-<!-- <button type = "button" id = "notify" name = "button">
-  Click here to trigger a notification!</button> -->
 <script>
     const electron = require('electron');
     const ipcRenderer = electron.ipcRenderer;
@@ -44,15 +42,11 @@
       var inputs = document.querySelectorAll("#cpu_val");
       var processes = document.querySelectorAll("#process_name");
       var pid = document.querySelectorAll("#pid");
-  
-      // console.log(whitelist);
-      for (var i = 0; i < inputs.length; i++) {
+        for (var i = 0; i < inputs.length; i++) {
         const value = parseInt(inputs[i].innerHTML);
         if (value > 20) {
-          // console.log(whitelist);
           const process = processes[i].innerHTML;
           const local_pid = pid[i].innerHTML;
-          // const notifier = require('node-notifier');
  
           var notifier = new NotificationCenter({
             withFallback: false, // Use Growl Fallback if <= 10.8 
@@ -63,11 +57,9 @@
               'title': "CPU Tracker",
               // 'subtitle': void 0,
               'message': `${process} is using ${value}% CPU`,
-              'sound': false, // Case Sensitive string for location of sound file, or use one of OS X's native sounds (see below) 
+              'sound': true, // Case Sensitive string for location of sound file, or use one of OS X's native sounds (see below) 
               'icon': path.join(__dirname, 'app_icon.png'), // Absolute Path to Triggering Icon 
               'actions': ['Kill'],
-              'closeLable': 'Close',
-              'group': 'my-group',
               // 'reply': true,
               // 'actions': [
               //   { type: 'button', text: 'Action 1'}
@@ -75,7 +67,7 @@
 
               'contentImage': path.join(__dirname, 'app_icon.png'), // Absolute Path to Attached Image (Content Image) 
               // 'open': void 0, // URL to open on Click 
-              'wait': false // Wait for User Action against Notification 
+              'wait': true // Wait for User Action against Notification 
 
             }, function(error, response) {
               if(error) console.log(error)
